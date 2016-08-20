@@ -1,4 +1,0 @@
-Sitemap: https://www.mangoosta.com.ve/sitemapindex.xml
-
-User-Agent: *
-Host: www.mangoosta.com.ve
