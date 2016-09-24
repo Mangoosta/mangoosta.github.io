@@ -24,3 +24,7 @@
 	background-size: cover;
 	background-position: 50% 50%;
 }
+
+.card-title {
+	font-size: 22px !important;
+}
