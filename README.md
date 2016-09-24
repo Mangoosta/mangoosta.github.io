@@ -50,7 +50,6 @@ Proporcionar un servicio oportuno a nuestros clientes para cubrir sus necesidade
 ## 8. Integrantes
 
 * Jhony Grillet
-* Adriana Torres
-* Ruben García
-* Rafael Arellano
+* Dayana Ovalle
+* Alvaro Fernández
 * Ernesto Crespo 
