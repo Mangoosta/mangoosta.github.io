@@ -183,7 +183,7 @@ input[type="submit"].mangoosta-btn {
 .mangoosta-primary-text {
   color: #60057A; }
 
-.mangoosta-secondary-text, a:not(> .mangoosta-navbar-fixed-inner) {
+.mangoosta-secondary-text {
   color: #1E7A05; }
 
 .mangoosta-primary-border, .mangoosta-btn, input[type="checkbox"], input[type="radio"] {
@@ -259,9 +259,6 @@ label {
 
 .mangoosta-input-wrong {
   border-bottom: 1px solid #7A041E !important; }
-
-a, a:link, a:visited {
-  text-decoration: none; }
 
 .mangoosta-card {
   box-shadow: 1px 1px 6px #444;

@@ -302,9 +302,6 @@ label {
 .mangoosta-input-wrong {
 	border-bottom: 1px solid $wrong !important;
 }
-a, a:link, a:visited {
-	text-decoration: none;
-}
 .mangoosta-card {
 	box-shadow: 1px 1px 6px $normal;
 	padding: 0.5em;
@@ -314,5 +311,4 @@ a, a:link, a:visited {
 }
 a:not(>.mangoosta-navbar-fixed-inner) {
 	font-weight: bold;
-	@extend .mangoosta-secondary-text
 }
