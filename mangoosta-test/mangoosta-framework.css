@@ -125,7 +125,7 @@ h2 {
 
   .mangoosta-menu:hover {
     background-color: #1E7A05;
-    width: 198px; } }
+    width: 30%; } }
 .mangoosta-container {
   width: 80%;
   margin: 64px auto auto; }
@@ -140,7 +140,6 @@ h2 {
   line-height: 64px;
   border-radius: 1px;
   margin-right: 4px;
-  color: #FFFAF0;
   box-shadow: 1px 1px 8px #444;
   -webkit-touch-callout: none;
   -khtml-user-select: none;
@@ -148,7 +147,6 @@ h2 {
   -ms-user-select: none; }
 
 input[type="submit"].mangoosta-btn {
-  color: #FFFAF0;
   padding: 0 8px;
   width: auto; }
 
@@ -162,8 +160,10 @@ input[type="submit"].mangoosta-btn {
 
 .mangoosta-logo {
   float: left;
-  padding: 0 8px;
-  color: #FFFAF0; }
+  padding: 8px;
+  color: #FFFAF0;
+  width: 48px;
+  height: 48px; }
 
 .mangoosta-centered {
   text-align: center; }
@@ -180,7 +180,7 @@ input[type="submit"].mangoosta-btn {
 .mangoosta-secondary-back, input[type="submit"].mangoosta-btn, .mangoosta-item:hover {
   background-color: #1E7A05; }
 
-.mangoosta-primary-text {
+.mangoosta-primary-text, a, a:link a:visited {
   color: #60057A; }
 
 .mangoosta-secondary-text {
@@ -192,7 +192,7 @@ input[type="submit"].mangoosta-btn {
 .mangoosta-secondary-border, input[type="submit"].mangoosta-btn {
   border: 1px solid #1E7A05; }
 
-.mangoosta-coloured-text {
+.mangoosta-coloured-text, .mangoosta-btn, input[type="submit"].mangoosta-btn {
   color: #FFFAF0; }
 
 .mangoosta-fixed-navbar {
@@ -212,6 +212,9 @@ input[type="submit"].mangoosta-btn {
   .mangoosta-fixed-navbar-inner a {
     font-weight: bold;
     text-decoration: none; }
+
+a, a:link a:visited {
+  text-decoration: none; }
 
 input, textarea, select {
   font-family: 'Open Sans', Sans;
@@ -261,14 +264,10 @@ label {
   border-bottom: 1px solid #7A041E !important; }
 
 .mangoosta-card {
-  box-shadow: 1px 1px 6px #444;
-  padding: 0.5em; }
+  box-shadow: 1px 2px 4px #444;
+  padding: 8px; }
 
-.mangoosta-card:hover {
-  box-shadow: 1px 4px 12px #444; }
-
-a:not(> .mangoosta-navbar-fixed-inner) {
-  font-weight: bold;
-  color: #60057A; }
+.mangoosta-card:hover, .mangoosta-btn:hover {
+  box-shadow: 1px 8px 16px #444; }
 
 /*# sourceMappingURL=mangoosta-framework.css.map */

@@ -152,7 +152,7 @@ h2{
 	}
 	.mangoosta-menu:hover {
 		background-color: $secondary;
-		width: 198px;
+		width: 30%;
 	}
 }
 .mangoosta-container {
@@ -169,9 +169,9 @@ h2{
 	line-height: 64px;
 	border-radius: 1px;
 	margin-right: 4px;
-	color: $coloured;
 	@extend .mangoosta-primary-back;
 	@extend .mangoosta-primary-border;
+	@extend .mangoosta-coloured-text;
 	box-shadow: 1px 1px 8px $normal;
 	-webkit-touch-callout: none;
 	-khtml-user-select: none;
@@ -181,7 +181,7 @@ h2{
 input[type="submit"].mangoosta-btn {
 	@extend .mangoosta-secondary-back;
 	@extend .mangoosta-secondary-border;
-	color: $coloured;
+	@extend .mangoosta-coloured-text;
 	padding: 0 8px;
 	width: auto;
 }
@@ -198,8 +198,10 @@ input[type="submit"].mangoosta-btn {
 }
 .mangoosta-logo {
 	float: left;
-	padding: 0 8px;
+	padding: 8px;
 	color: $coloured;
+	width: 48px;
+	height: 48px;
 }
 .mangoosta-centered {
 	text-align: center;
@@ -250,6 +252,10 @@ input[type="submit"].mangoosta-btn {
 		font-weight: bold;
 		text-decoration: none;
 	}
+}
+a, a:link a:visited {
+	@extend .mangoosta-primary-text;
+	text-decoration: none;
 }
 input, textarea, select {
 	font-family: 'Open Sans', Sans;
@@ -303,13 +309,9 @@ label {
 	border-bottom: 1px solid $wrong !important;
 }
 .mangoosta-card {
-	box-shadow: 1px 1px 6px $normal;
-	padding: 0.5em;
+	box-shadow: 1px 2px 4px $normal;
+	padding: 8px;
 }
-.mangoosta-card:hover {
-	box-shadow: 1px 4px 12px $normal;
-}
-a:not(>.mangoosta-navbar-fixed-inner) {
-	font-weight: bold;
-	color: $primary;
+.mangoosta-card:hover, .mangoosta-btn:hover {
+	box-shadow: 1px 8px 16px $normal;
 }
