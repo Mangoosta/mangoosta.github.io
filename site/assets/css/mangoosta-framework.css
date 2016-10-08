@@ -66,7 +66,7 @@ h2 {
   float: right;
   margin: 0; }
 
-.mangoosta-fixer-menu {
+.mangoosta-fixer-menu, .mangoosta-image-responsive {
   display: none; }
 
 @media screen and (max-width: 960px) {
@@ -124,8 +124,19 @@ h2 {
     width: 100%; }
 
   .mangoosta-menu:hover {
+    background-color: #1E7A05; }
+
+  .mangoosta-menu-hover {
     background-color: #1E7A05;
-    width: 30%; } }
+    width: 30%; }
+
+  .mangoosta-image-responsive {
+    display: inline-block;
+    width: 128px;
+    height: 128px; }
+
+  .mangoosta-mobile-centered {
+    text-align: center; } }
 .mangoosta-container {
   width: 80%;
   margin: 64px auto auto; }
@@ -194,6 +205,9 @@ input[type="submit"].mangoosta-btn {
 
 .mangoosta-coloured-text, .mangoosta-btn, input[type="submit"].mangoosta-btn {
   color: #FFFAF0; }
+
+.mangoosta-padded-text {
+  padding: 0 32px; }
 
 .mangoosta-fixed-navbar {
   position: fixed;

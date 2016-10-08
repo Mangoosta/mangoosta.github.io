@@ -92,7 +92,7 @@ h2{
 	float: right;
 	margin: 0;
 }
-.mangoosta-fixer-menu {
+.mangoosta-fixer-menu, .mangoosta-image-responsive {
  	display: none;
 }
 @media screen and (max-width: 960px) {
@@ -152,7 +152,19 @@ h2{
 	}
 	.mangoosta-menu:hover {
 		background-color: $secondary;
+		// width: 30%;
+	}
+	.mangoosta-menu-hover {
+		background-color: $secondary;
 		width: 30%;
+	}
+	.mangoosta-image-responsive {
+		display: inline-block;
+		width: 128px;
+		height: 128px;
+	}
+	.mangoosta-mobile-centered {
+		text-align: center;
 	}
 }
 .mangoosta-container {
@@ -232,6 +244,9 @@ input[type="submit"].mangoosta-btn {
 }
 .mangoosta-coloured-text {
 	color: $coloured;
+}
+.mangoosta-padded-text {
+	padding: 0 32px;
 }
 .mangoosta-fixed-navbar {
 	position: fixed;

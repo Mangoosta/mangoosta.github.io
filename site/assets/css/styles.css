@@ -7,3 +7,12 @@
 	background-size: cover;
 	background-position: 50% 50%;
 }
+
+.material-icons {
+	font-size: 3em;
+}
+
+.mangoosta-card {
+  box-shadow: 1px 2px 4px #FFFAF0 !important;
+  padding: 8px;
+}
