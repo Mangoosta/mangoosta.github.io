@@ -5,6 +5,7 @@ var $ = require('minified').$,
 
 function resizeAndShowMenu() {
 	var viewport = $(screen).get("width");
+	console.info(viewport);
 	if (viewport <= 960) {
 		$(".mangoosta-items").hide();
 	} else {
@@ -25,8 +26,9 @@ function isOtherPage(indexRoute) {
 $(function () {
 
 	var toggleResponsiveMenu = $(".mangoosta-items").toggle(
-		{"$$show": 0},
-		{"$$show": 1}
+		{'$$show': 0},
+		{'$$show': 1},
+		300
 	);
 
 	resizeAndShowMenu();
@@ -35,7 +37,8 @@ $(function () {
 	$(window).on("resize", resizeAndShowMenu);
 
 	$(".mangoosta-menu").onClick(function (event) {
-		$(event.target).set("")
+		$(event.target).set("mangoosta-menu-hover");
+		toggleResponsiveMenu();
 	});
 
 	$(".menu").onClick(function (event, index) {
@@ -46,5 +49,4 @@ $(function () {
 		}
 	});
 
-
-})
+});
