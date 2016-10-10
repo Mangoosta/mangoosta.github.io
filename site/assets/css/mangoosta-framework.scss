@@ -92,7 +92,11 @@ h2{
 	float: right;
 	margin: 0;
 }
+<<<<<<< HEAD
 .mangoosta-fixer-menu {
+=======
+.mangoosta-fixer-menu, .mangoosta-image-responsive {
+>>>>>>> e44c4ad9d6f2da6ab11d4f2530ce975fd11277ce
  	display: none;
 }
 @media screen and (max-width: 960px) {
@@ -123,7 +127,11 @@ h2{
 		float: left;
 	}
 	.mangoosta-container {
+<<<<<<< HEAD
 		width: 70%;
+=======
+		width: 90%;
+>>>>>>> e44c4ad9d6f2da6ab11d4f2530ce975fd11277ce
 		margin: 64px auto auto;
 	}
 	.mangoosta-fixed-navbar-inner {
@@ -152,8 +160,25 @@ h2{
 	}
 	.mangoosta-menu:hover {
 		background-color: $secondary;
+<<<<<<< HEAD
 		width: 30%;
 	}
+=======
+		// width: 30%;
+	}
+	.mangoosta-menu-hover {
+		background-color: $secondary;
+		width: 30%;
+	}
+	.mangoosta-image-responsive {
+		display: inline-block;
+		width: 128px;
+		height: 128px;
+	}
+	.mangoosta-mobile-centered {
+		text-align: center;
+	}
+>>>>>>> e44c4ad9d6f2da6ab11d4f2530ce975fd11277ce
 }
 .mangoosta-container {
 	width: 80%;
@@ -233,6 +258,12 @@ input[type="submit"].mangoosta-btn {
 .mangoosta-coloured-text {
 	color: $coloured;
 }
+<<<<<<< HEAD
+=======
+.mangoosta-padded-text {
+	padding: 0 32px;
+}
+>>>>>>> e44c4ad9d6f2da6ab11d4f2530ce975fd11277ce
 .mangoosta-fixed-navbar {
 	position: fixed;
 	top: 0;
