@@ -5,7 +5,6 @@ var $ = require('minified').$,
 
 function resizeAndShowMenu() {
 	var viewport = $(screen).get("width");
-	console.info(viewport);
 	if (viewport <= 960) {
 		$(".mangoosta-items").hide();
 	} else {
