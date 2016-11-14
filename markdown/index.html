@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./jQuery/jqueryuiDialogs/jquery-ui.css"/>
+    <link rel="stylesheet" href="./jQuery/sweetalert/sweetalert.css"/>
+    <link rel="stylesheet" href="./99lime/css/kickstart.css"/>
+    <link rel="stylesheet" href="./99lime/style.css"/>
+    <link rel="stylesheet" href="./css/codemirror.css"/>
+    <link rel="stylesheet" href="./theme/neat.css"/>
+    <link rel="stylesheet" href="./css/application.css"/>
+
+		<script type="text/javascript" src="./jQuery/jquery.min.js"></script>
+    <script type="text/javascript" src="./jQuery/jqueryuiDialogs/jquery-ui.js"></script>
+    <script type="text/javascript" src="./jQuery/sweetalert/sweetalert.min.js"></script>
+    <script type="text/javascript" src="./zip/jszip.min.js"></script>
+    <script type="text/javascript" src="./zip/jszip-utils.js"></script>
+    <script type="text/javascript" src="./zip/FileSaver.js"></script>
+	  <script type="text/javascript" src="./99lime/js/kickstart.js"></script>
+    <script type="text/javascript" src="./js/codemirror.js"></script>
+    <script type="text/javascript" src="./mode/markdown/markdown.js"></script>
+		<script type="text/javascript" src="./js/ss.js"></script>
+    <script type="text/javascript" src="./js/99lime.js"></script>
+    <script type="text/javascript" src="./js/sweetalert.js"></script>
+    <script type="text/javascript" src="./js/ExcelToLatex.js"></script>
+    <script type="text/javascript" src="./js/jqueryuiDialogs.js"></script>
+    <script type="text/javascript" src="./js/MarkdownMathJaxEditor.js"></script>
+		<script type="text/javascript" src="./js/application.js" ></script>
+	</head>
+	<body>
+    <nav id='toolbar' class="navbar">
+      <ul>
+        <li>
+          <a>Editor Markdown + Latex</a>
+          <ul id='buttonbar' class="button-bar">
+            <li><a id="btnnew" class="tooltip" title="Nuevo archivo"><i class="fa fa-file-text-o"></i></a></li>
+            <li><a id="btnopen" class="tooltip" title="Abrir archivo"><i class="fa fa-folder-open-o"></i></a></li>
+            <li><a id="btnsave" class="tooltip" title="Guardar archivo"><i class="fa fa-floppy-o"></i></a></li>
+          </ul>
+          &nbsp;&nbsp;
+          <ul id='buttonbar' class="button-bar">
+            <li><a id="btnplay" class="tooltip" title="Generar"><i class="fa fa-play"></i></a></li>
+          </ul>
+          &nbsp;&nbsp;
+          <ul id='buttonbar' class="button-bar">
+            <li><a id="btncut" class="tooltip" title="Cortar"><i class="fa fa-scissors"></i></a></li>
+            <li><a id="btncopy" class="tooltip" title="Copiar"><i class="fa fa-files-o"></i></a></li>
+            <li><a id="btnpaste" class="tooltip" title="Pegar"><i class="fa fa-clipboard"></i></a></li>
+          </ul>
+          &nbsp;&nbsp;
+          <ul id='buttonbar' class="button-bar">
+            <li><a id="btnbold" class="tooltip" title="Negrita"><i class="fa fa-bold"></i></a></li>
+            <li><a id="btnitalic" class="tooltip" title="Cursive"><i class="fa fa-italic"></i></a></li>
+            <li><a id="btntable" class="tooltip" title="Tabla"><i class="fa fa-table"></i></a></li>
+            <li><a id="btnlist" class="tooltip" title="Lista"><i class="fa fa-list"></i></a></li>
+            <li><a id="btnnumericlist" class="tooltip" title="Lista numerica"><i class="fa fa-list-ol"></i></a></li>
+            <li><a id="btnexcel" class="tooltip" title="Formula de Excel"><i class="fa fa-file-excel-o"></i></a></li>
+          </ul>
+          &nbsp;&nbsp;
+          <ul id='buttonbar' class="button-bar">
+            <li><a id="btnpreview" class="tooltip" title=""><i class="fa fa-pencil-square-o"></i></a></li>
+            <li><a id="btnzip" class="tooltip" title="descargar proyecto en zip"><i class="fa fa-file-archive-o"></i></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainmenu"></div>
+    <div id="source" class="col_5">
+      <textarea id="textareasource" placeholder="Escriba el codigo Markdown"></textarea>
+    </div>
+    <div id="preview" class="col_7" style="border-left: 2px solid #ccc;">
+      <iframe id="ifrmpreview" src="./math.html" style="width: 90%; height: 300px" name="internal">
+      </iframe>
+      <textarea id="previewtextarea" placeholder="Fuente del Preview">
+      </textarea>
+    </div>
+  </body>
+</html>

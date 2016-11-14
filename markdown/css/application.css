@@ -1,0 +1,154 @@
+html {
+    overflow: hidden;
+}
+
+table.nolines th{
+    border-bottom:0px;
+}
+
+table.nolines td{
+    border-bottom:0px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+table.nolines input{
+    height: 22px;
+    margin: 0 0 0 0;
+}
+
+ul.tabs li a {
+    padding: 9px 7px;
+}
+
+iframe {
+    padding-left: 10px;
+}
+
+.menu li a{
+    padding:8px 10px;
+}
+
+.menu ul{
+    min-width:200px
+}
+
+.navbar {
+    position: static;
+    background: #000;
+}
+
+.navbar li span {
+    display: inline-block;
+    color: #efefef;
+    padding: 1em 1.3em 1em 0em;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 100%;
+    font-size: 1.2em;
+}
+
+.navbar li img {
+    display: inline-block;
+    padding: 0.7em 0.7em;
+    line-height: 100%;
+}
+
+.tabpadding {
+    padding: 5px;
+}
+
+.autoscroll {
+    overflow: auto;
+}
+
+.nomargin {
+    margin: 0 0 0 0;
+}
+
+.nopadding {
+    padding: 0 0 0 0;
+}
+
+.indentation {
+    padding-left: 10px
+}
+
+.nopadding {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}
+
+#buttonbar {
+  top: -6px;
+}
+
+iframe {
+    border:none;
+}
+
+textarea{
+width:auto;
+height:200px;
+margin:0;
+border:1px solid #ccc;
+padding:5px;
+vertical-align: middle;
+font-family:inherit;
+font-size:1.1em;
+-moz-border-radius:0px;
+-webkit-border-radius:0px;
+border-radius:0px;
+-moz-box-shadow:inset 0 0 0px #ccc;
+-webkit-box-shadow:inset 0 0px 0px #ccc;
+box-shadow:inset 0 0px 0px #ccc;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.shadowtextarea{
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border-radius:5px;
+-moz-box-shadow:inset 0 0 6px #ccc;
+-webkit-box-shadow:inset 0 1px 6px #ccc;
+box-shadow:inset 0 1px 6px #ccc;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}
+
+textarea{
+    outline:0px !important;
+    -webkit-appearance:none;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}
