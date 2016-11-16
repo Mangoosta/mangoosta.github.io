@@ -1,193 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-	<link rel="shortcut icon" type="image/x-icon" href="img/mangoosta-light-logo.png">
-	<title>Mangoosta - Página Principal</title>
-	<!-- CSS  -->
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo-mangoosta-icono.svg">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link rel="stylesheet" href="assets/css/hint.min.css">
+	<link rel="stylesheet" href="assets/css/mangoosta-framework/mangoosta.css">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<title>Mangoosta | Página principal</title>
 </head>
-<body>
-	<div class="navbar-fixed">
-		<nav class="deep-purple" role="navigation">
-			<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="img/mangoosta-light-128.png" width="45%" style="margin-top: 4px;" alt="Página principal" class="hide-on-med-and-down"></a>
-			<ul id="dropdown-sm" class="dropdown-content deep-purple lighten-2">
-				<li><a href="#!" class="white-text"><i class="material-icons">language</i>ESP</a></li>
-				<li><a href="#!" class="white-text"><i class="material-icons">language</i>ENG</a></li>
+<body class="mangoosta-container mangoosta-primary-back mangoosta-coloured-text">
+	<nav class="mangoosta-fixed-navbar">
+		<div class="mangoosta-fixed-navbar-inner">
+			<img src="assets/img/logo-mangoosta-web.svg" alt="" class="mangoosta-logo mangoosta-smooth-anim">
+			<ul class="mangoosta-items">
+				<li class="mangoosta-item"><a href="#" class="mangoosta-menu mangoosta-smooth-anim" id="menu-active">&nbsp;</a></li>
+				<li class="mangoosta-item"><a href="#mangoosta-content-inicio" class="mangoosta-smooth-anim">Inicio</a></li>
+				<li class="mangoosta-item"><a href="#mangoosta-content-empresa" class="mangoosta-smooth-anim">La empresa</a></li>
+				<li class="mangoosta-item"><a href="#mangoosta-content-tecnologias" class="mangoosta-smooth-anim">Tecnologías</a></li>
+				<li class="mangoosta-item"><a href="#mangoosta-content-productos" class="mangoosta-smooth-anim">Productos</a></li>
+				<li class="mangoosta-item"><a href="#mangoosta-content-contacto" class="mangoosta-smooth-anim">Contacto</a></li>
+				<li class="mangoosta-item"><a href="#mangoosta-content-contacto" class="mangoosta-smooth-anim">Idioma</a></li>
 			</ul>
-			<ul id="dropdown-xs" class="dropdown-content deep-purple lighten-2">
-				<li><a href="#!" class="white-text"><i class="material-icons white-text">language</i>ESP</a></li>
-				<li><a href="#!" class="white-text"><i class="material-icons white-text">language</i>ENG</a></li>
-			</ul>
-				<ul class="right hide-on-med-and-down">
-					<li><a href="#inicio">Inicio</a></li>
-					<li><a href="#nosotros">Nosotros</a></li>
-					<li><a href="#">Áreas de acción</a></li>
-					<li><a href="#">Contacto</a></li>
-					<li><a href='#' class="dropdown-button" data-activates="dropdown-sm">Idioma<i class="material-icons right">arrow_drop_down</i></a></li>
-				</ul>
-
-				<ul id="nav-mobile" class="side-nav deep-purple">
-					<li><a class="white-text" href="#inicio">Inicio</a></li>
-					<li><a class="white-text" href="#nosotros">Nosotros</a></li>
-					<li><a class="white-text" href="#">Áreas de acción</a></li>
-					<li><a class="white-text" href="#">Contacto</a></li>
-					<li><a href='#' class="dropdown-button white-text" data-activates="dropdown-xs">Idioma<i class="material-icons right white-text">arrow_drop_down</i></a></li>
-				</ul>
-				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+		</div>
+	</nav>
+	<div id="back"></div>
+	<section id="mangoosta-content-inicio">
+		<div class="mangoosta-mobile-text-centered">
+			<br><br>
+			<img src="assets/img/logo-mangoosta-web.svg" class="mangoosta-responsive-image" alt="">
+			<h1 class="h1-mobile">Mangoosta</h1>
+			<h2 class="h2-mobile">Interconectamos <span id="typewriter"></span></h2>
+		</div>
+	</section>
+	<section id="mangoosta-content-empresa">
+		<br>
+		<div class="mangoosta-grid">
+			<h1 class="h1-mobile">La empresa</h1>
+			<p>Mangoosta es una empresa "orientada a datos". Somos personas con experiencia en manejo, procesamiento, análisis, desarrollo y despliegue de aplicaciones orientadas a datos, y este es nuestro elemento diferenciador.</p>
+			<p>En Mangoosta, <b>¡el rey es el dato!</b></p>
+			<div class="mangoosta-column-3 mangoosta-responsive-column icon-block">
+				<i class="material-icons">group</i>
+				<h2>Nuestro Propósito</h2>
+				<p>Las personas son entidades andantes de información. Queremos interconectar esas personas y la información que generan, haciéndola significativa y útil para propender a una nueva sociedad global del conocimiento.</p>
 			</div>
-		</nav>
-	</div>
-	<div id="inicio">
-		<div id="back"></div>
-		<div class="section no-pad-bot" id="index-banner">
-			<div class="container">
-				<br><br>
-				<h1 class="header center green-text">Mangoosta</h1>
-				<div class="row center">
-					<h5 class="header col s12 light">Interconectamos<span id="typewriter"></span></h5>
+			<div class="mangoosta-column-1">&nbsp;</div>
+			<div class="mangoosta-column-3 mangoosta-responsive-column icon-block">
+				<i class="material-icons">accessibility</i>
+				<h2>Nuestra Visión</h2>
+				<p>Crear una nueva sociedad global del conocimiento, posible, no utópica, basada en información práctica, útil, precisa, redárquica, justa y adecuadamente distribuida, que permita empoderar tanto a personas como a empresas en general, siempre pensando en el aporte social global.</p>
+			</div>
+			<div class="mangoosta-column-1">&nbsp;</div>
+			<div class="mangoosta-column-3 mangoosta-responsive-column icon-block">
+				<i class="material-icons">nature_people</i>
+				<h2>Nuestra Naturaleza</h2>
+				<p>Así como la mangosta (<b>Herpestidae</b>) puede enfrentarse a otros animales del doble de su tamaño, es totalmente gregaria, se comunica con otros mediante la simplificacíón de redes complejas de comunicación y posee una agilidad sorprendente. Así somos nosotros.</p>
+			</div>
+		</div>
+	</section>
+	<section id="mangoosta-content-tecnologias">
+		<br>
+		<h1 class="h1-mobile">Porque nos apasiona la tecnología...</h2>
+		<div class="mangoosta-grid">
+			<div class="mangoosta-column-4 mangoosta-responsive-column">
+				<div class="mangoosta-smooth-anim">
+					<h2>Back-end</h2>
+					</div>
+					<div class="hint--top hint--medium" aria-label="Utilizamos C++ 11 con las librerías más actualizadas para IoT, sistemas en tiempo real y transpilación"><img src="assets/img/logos/c-logo.png" alt="" class="mangoosta-image"></div>
+					<div class="hint--top hint--medium" aria-label="CouchDB es una base de datos noSQL multiparadigma y orientada a API REST"><img src="assets/img/logos/couchdb.jpg" alt="" class="mangoosta-image"></div>
+					<div class="hint--top hint--medium" aria-label="Usamos Java para desarrollo de aplicaciones nativas que requieran altos volúmenes de datos"><img src="assets/img/logos/java-icon.png" alt="" class="mangoosta-image"></div>
+					<div class="hint--top hint--medium" aria-label="PHP es un lenguaje de servidor ampliamente utilizado en aplicaciones web"><img src="assets/img/logos/2000px-php-logo-svg_.jpg" alt="" class="mangoosta-image"></div>
+					<div class="hint--top hint--medium" aria-label="Python es un lenguaje muy útil en el procesamiento de data y el análisis de datos"><img src="assets/img/logos/Python-logo.png" alt="" class="mangoosta-image"></div>
+					<div class="hint--top hint--medium" aria-label="PostgreSQL es la base de datos Open-Source más confiable y robusta que existe en el mercado"><img src="assets/img/logos/540px-postgresql_logo-3colors-svg_.png" alt="" class="mangoosta-image"></div>
+				</div>
+			</div>
+			<div class="mangoosta-column-4 mangoosta-responsive-column">
+				<div class="mangoosta-smooth-anim">
+					<h2>Dev-ops</h2>
+					<div class="hint--top hint--medium" aria-label="Docker es muy confiable en aquellos entornos donde se requiera un despliegue rápido de aplicaciones"><img src="assets/img/logos/docker_logo.svg" alt="" class="mangoosta-image"></div>
+					<div class="hint--top hint--medium" aria-label="Nuestra herramienta de control de versiones favorita. Versátil para gestión de proyectos y entrega contínua"><img src="assets/img/logos/gitlab.svg" alt="" class="mangoosta-image"></div>
+					<div class="hint--top hint--medium" aria-label="Jenkins es ampliamente utilizado en integración continua por su capacidad de interoperación con otras herramientas como Gitlab"><img src="assets/img/logos/jenkins-logo.png" alt="" class="mangoosta-image"></div>
+					<div class="hint--top hint--medium" aria-label="Sonarqube es una excelente herramienta para control de calidad de código fuente, entre otras alternativas"><img src="assets/img/logos/global.logo.sonarqube.gif" alt="" class="mangoosta-image"></div>
+					<div class="hint--top hint--medium" aria-label="Mangoosta es una empresa orientada a los datos. Nada mejor para describirlos y clasificarlos que Swagger.io"><img src="assets/img/logos/swagger-logo.png" alt="" class="mangoosta-image"></div>
+					<div class="hint--top hint--medium" aria-label="Apache Spark es actualmente la plataforma de Big Data más utilizada en el mundo. ¡Y también nosotros!"><img src="assets/img/logos/Spark_logo.png" alt="" class="mangoosta-image"></div>
+				</div>
+			</div>
+			<div class="mangoosta-column-4 mangoosta-responsive-column">
+				<div class="mangoosta-smooth-anim">
+					<h2>Front-end</h2>
+					<div class="hint--top hint--medium" aria-label="Angular.js se ha convertido en el Framework de referencia para desarrollo de aplicaciones orientadas a datos."><img src="assets/img/logos/angularjs_by_abhishekghosh-d6w57fs.png" alt="" class="mangoosta-image"></div>
+					<div class="hint--top hint--medium" aria-label="Porque para nosotros, la diferenciación es tan importante como los datos, llevamos un nivel de personalización importante usando HTML5 y CSS3. ¡Como está página web!"><img src="assets/img/logos/html5-css3.png" alt="" class="mangoosta-image"></div>
+					<div class="hint--top hint--medium" aria-label="Ionic Framework es ampliamente usado en la industria de desarrollo de software para aplicaciones híbridas y tiempo real."><img src="assets/img/logos/ionic_logo.png" alt="" class="mangoosta-image"></div>
+					<div class="hint--top hint--medium" aria-label="Node.js es nuestra base siempre confiable sobre la cual desarrollamos nuestras interfaces de aplicaciones"><img src="assets/img/logos/nodejs-logo-vector-download-400x400.jpg" alt="" class="mangoosta-image"></div>
+					<div class="hint--top hint--medium" aria-label="¿Requiere de un nivel de personalización muy específico para su aplicación? Sass nos ayuda mucho con eso"><img src="assets/img/logos/sass-logo.png" alt="" class="mangoosta-image"></div>
+					<div class="hint--top hint--medium" aria-label="Los sistemas en tiempo real dirigidos por datos han sido masivamente utilizados en la actualidad. Socket.io es una librería confiable cuando se trata de esos sistemas"><img src="assets/img/logos/socket-io-logo.svg" alt="" class="mangoosta-image"></div>
 				</div>
 			</div>
 		</div>
-
-		<div class="container">
-			<div class="section">
-
-				<!--   Icon Section   -->
-				<div class="row">
-					<div class="col s12 m4">
-						<div class="icon-block">
-							<h2 class="center green-text"><i class="material-icons">group</i></h2>
-							<h5 class="center">Nuestro Propósito</h5>
-
-							<p class="light">Las personas son entidades andantes de información. Queremos interconectar esas personas y la información que generan haciéndola significativa y útil, para propender a una nueva sociedad del conocimiento (la cual queremos construir en Venezuela y el resto del mundo).</p>
-						</div>
-					</div>
-
-					<div class="col s12 m4">
-						<div class="icon-block">
-							<h2 class="center green-text"><i class="material-icons">nature_people</i></h2>
-							<h5 class="center">La naturaleza es el ejemplo</h5>
-
-							<p class="light">Así como la mangoosta (<b>Herpestidae</b>) puede enfrentarse a otros animales del doble de su tamaño, es totalmente gregaria, se comunica con otros mediante simplificación de redes complejas de comunicación y posee una agilidad sorprendente. Así somos nosotros.</p>
-						</div>
-					</div>
-
-					<div class="col s12 m4">
-						<div class="icon-block">
-							<h2 class="center green-text"><i class="material-icons">accessibility</i></h2>
-							<h5 class="center">Nuestra visión</h5>
-
-							<p class="light">Crear una nueva sociedad global del conocimiento, posible, no utópica, basada en información práctica, útil, precisa, redárquica, justa y adecuadamente distribuida, que permita empoderar tanto a empresas como a personas en general, siempre pensando en el aporte social global.</p>
-						</div>
-					</div>
-				</div>
-
-			</div>
+	</section>
+	<section id="mangoosta-content-productos">
+		<br>
+		<h1 class="h1-mobile">Datos, nuestro principal producto</h1>
+		<h2 class="h2-mobile">Para muestra algunos botones.</h2>
+		<div class="mangoosta-grid" id="repos"></div>
+	</section>
+	<section id="mangoosta-content-contacto">
+		<br><br>
+		<div class="mangoosta-centered-text mangoosta-mobile-centered-text">
+			<img src="assets/img/687474703a2f2f342e62702e626c6f6773706f742e636f6d2f2d75796c75526f432d5a30412f54304c397866794f6e30492f41414141414141414245772f4b6754694c5575444767552f73313630302f4d55434841532e6a7067.jpeg" style="width: 100%; opacity: 0.8;" alt="">
+			<h1>En construcción</h1>
+			<h2>Estamos trabajando duro...</h2>
 		</div>
-	</div>
-	<div id="nosotros">
-		<div class="container">
-			<h1 class="green-text">Nosotros</h1>
-			<p class="">Somos un equipo, como la mangoosta en su hábitat natural...</p><br>
-			<div class="row">
-				<div class="col s12 m3">
-					<div class="card">
-						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="http://lorempixel.com/400/400/business/1">
-						</div>
-						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">seraph1<i class="material-icons right">more_vert</i></span>
-							<p class="green-text">Python, Docker, Debian</p>
-						</div>
-						<div class="card-reveal">
-							<span class="card-title green-text text-darken-5">Seraph<i class="material-icons right">close</i></span>
-							<h5 class="green-text">Sysadmin & Devops</h5>
-							<p>Here is some more information about this product that is only revealed once clicked on.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col s12 m3">
-					<div class="card">
-						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="http://lorempixel.com/400/400/business/4">
-						</div>
-						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">Dayifer<i class="material-icons right">more_vert</i></span>
-							<p class="green-text">Java, PHP, Jenkins</p>
-						</div>
-						<div class="card-reveal">
-							<span class="card-title green-text text-darken-5">dayifer<i class="material-icons right">close</i></span>
-							<h5 class="green-text">Agile Project Managment</h5>
-							<p>Here is some more information about this product that is only revealed once clicked on.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col s12 m3">
-					<div class="card">
-						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="http://lorempixel.com/400/400/business/8">
-						</div>
-						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">Aldo Ferreira<i class="material-icons right">more_vert</i></span>
-							<p class="green-text">C/C++, IoT, Android</p>
-						</div>
-						<div class="card-reveal">
-							<span class="card-title green-text text-darken-5">Aldo Ferreira<i class="material-icons right">close</i></span>
-							<h5 class="green-text">Software Architect</h5>
-							<p>Here is some more information about this product that is only revealed once clicked on.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col s12 m3">
-					<div class="card">
-						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="http://lorempixel.com/400/400/business/9">
-						</div>
-						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">Ch1nux<i class="material-icons right">more_vert</i></span>
-							<p class="green-text">Javascript, CSS3, HTML5</p>
-						</div>
-						<div class="card-reveal">
-							<span class="card-title green-text text-darken-5">Ch1nux<i class="material-icons right">close</i></span>
-							<h5 class="green-text">Front-end Web Developer</h5>
-							<p>Apasionado por el desarrollo de interfaces de aplicaciones web, así como el diseño UI/UX, responsividad y rapidez. También curioso del lenguaje de programación Javascript, del cual habla en su <a href="http://jotaeseymas.wordpress.com" target="_blank" class="green-text">blog</a>.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<footer class="page-footer deep-purple">
-		<div class="container">
-			<div class="row">
-				<div class="col l6 s12">
-					<h5 class="white-text">¿Quiénes somos?</h5>
-					<p class="grey-text text-lighten-4">Somos una empresa de innovación continua, datos abiertos y vinculados, mediante una gerencia redárquica, basada en el mutuo aporte de sus colaboradores, de los trabajadores para los trabajadores, orientada al logro, y que fija metas comunes para el bienestar social tanto de la empresa como de su entorno.</p>
-				</div>
-				<div class="col l6 s12">
-					<h5 class="white-text">Contáctanos</h5>
-					<p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non, minima perferendis dolore, veritatis quis magni eveniet dicta dolorem consectetur ex sapiente qui, quam repudiandae fugit repellendus. Sit, excepturi quam!</p>
-				</div>
-			</div>
-		</div>
-		<div class="footer-copyright">
-			<div class="container">
-			Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-			</div>
-		</div>
-	</footer>
-
-
-	<!--  Scripts-->
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="js/materialize.js"></script>
-	<script src="js/typewriter.min.js"></script>
-	<script src="js/particles.min.js"></script>
-	<script src="js/init.js"></script>
-	</body>
+	</section>
+	<script src="assets/js/snap.js"></script>
+	<script src="assets/js/minified.js"></script>
+	<script src="assets/js/mangoosta.app.js"></script>
+	<script src="assets/js/particles.min.js"></script>
+	<script src="assets/js/config.particles.js"></script>
+	<script src="assets/js/typewriter.min.js"></script>
+	<script src="assets/js/config.typewriter.js"></script>
+</body>
 </html>
