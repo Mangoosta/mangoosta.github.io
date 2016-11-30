@@ -238,10 +238,13 @@ a, a:link, a:visited {
 .mangoosta-image {
   width: 128px;
   height: 128px;
-  margin: 16px; }
+  margin: 12px; }
 .mangoosta-logo {
   padding: 8px;
   height: 48px; }
+.mangoosta-media {
+  display: flex;
+  align-items: flex-start; }
 .mangoosta-items {
   list-style-type: none;
   -webkit-margin-block-start: 0;

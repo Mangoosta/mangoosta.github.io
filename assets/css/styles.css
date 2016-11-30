@@ -1,5 +1,6 @@
 #back {
 	position: absolute;
+	z-index: -1;
 	width: 80%;
 	height: 90%;
 	background-color: transparent;
@@ -15,5 +16,5 @@
 
 .mangoosta-card {
   box-shadow: 1px 2px 4px #FFFAF0 !important;
-  padding: 8px;
+  height: 160px;
 }

@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo-mangoosta-icono.svg">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/hint.min.css">
 	<link rel="stylesheet" href="assets/css/mangoosta-framework/mangoosta.css">
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<title>Mangoosta | Página principal</title>
@@ -14,7 +13,7 @@
 		<div class="mangoosta-fixed-navbar-inner">
 			<img src="assets/img/logo-mangoosta-web.svg" alt="" class="mangoosta-logo mangoosta-smooth-anim">
 			<ul class="mangoosta-items">
-				<li class="mangoosta-item"><a href="#" class="mangoosta-menu mangoosta-smooth-anim" id="menu-active">&nbsp;</a></li>
+				<li class="mangoosta-item"><a href="#mangoosta-content-inicio" class="mangoosta-menu mangoosta-smooth-anim" id="menu-active">&nbsp;</a></li>
 				<li class="mangoosta-item"><a href="#mangoosta-content-inicio" class="mangoosta-smooth-anim">Inicio</a></li>
 				<li class="mangoosta-item"><a href="#mangoosta-content-empresa" class="mangoosta-smooth-anim">La empresa</a></li>
 				<li class="mangoosta-item"><a href="#mangoosta-content-tecnologias" class="mangoosta-smooth-anim">Tecnologías</a></li>
@@ -27,7 +26,7 @@
 	<div id="back"></div>
 	<section id="mangoosta-content-inicio">
 		<div class="mangoosta-mobile-text-centered">
-			<br><br>
+			<br>
 			<img src="assets/img/logo-mangoosta-web.svg" class="mangoosta-responsive-image" alt="">
 			<h1 class="h1-mobile">Mangoosta</h1>
 			<h2 class="h2-mobile">Interconectamos <span id="typewriter"></span></h2>
@@ -60,40 +59,38 @@
 	</section>
 	<section id="mangoosta-content-tecnologias">
 		<br>
-		<h1 class="h1-mobile">Porque nos apasiona la tecnología...</h2>
+		<h1 class="h1-mobile">Nos apasiona la tecnología...</h2>
 		<div class="mangoosta-grid">
-			<div class="mangoosta-column-4 mangoosta-responsive-column">
+			<div class="mangoosta-responsive-column">
 				<div class="mangoosta-smooth-anim">
 					<h2>Back-end</h2>
-					</div>
-					<div class="hint--top hint--medium" aria-label="Utilizamos C++ 11 con las librerías más actualizadas para IoT, sistemas en tiempo real y transpilación"><img src="assets/img/logos/c-logo.png" alt="" class="mangoosta-image"></div>
-					<div class="hint--top hint--medium" aria-label="CouchDB es una base de datos noSQL multiparadigma y orientada a API REST"><img src="assets/img/logos/couchdb.jpg" alt="" class="mangoosta-image"></div>
-					<div class="hint--top hint--medium" aria-label="Usamos Java para desarrollo de aplicaciones nativas que requieran altos volúmenes de datos"><img src="assets/img/logos/java-icon.png" alt="" class="mangoosta-image"></div>
-					<div class="hint--top hint--medium" aria-label="PHP es un lenguaje de servidor ampliamente utilizado en aplicaciones web"><img src="assets/img/logos/2000px-php-logo-svg_.jpg" alt="" class="mangoosta-image"></div>
-					<div class="hint--top hint--medium" aria-label="Python es un lenguaje muy útil en el procesamiento de data y el análisis de datos"><img src="assets/img/logos/Python-logo.png" alt="" class="mangoosta-image"></div>
-					<div class="hint--top hint--medium" aria-label="PostgreSQL es la base de datos Open-Source más confiable y robusta que existe en el mercado"><img src="assets/img/logos/540px-postgresql_logo-3colors-svg_.png" alt="" class="mangoosta-image"></div>
-				</div>
+					<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card mangoosta-media"><img src="assets/img/logos/c-logo.png" alt="" class="mangoosta-image"><p>Utilizamos C++ 11 con las librerías más actualizadas para IoT, sistemas en tiempo real y transpilación</p></div></div>
+					<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card mangoosta-media"><img src="assets/img/logos/couchdb.jpg" alt="" class="mangoosta-image"><p>CouchDB es una base de datos noSQL multiparadigma y orientada a API REST</p></div></div>
+					<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card mangoosta-media"><img src="assets/img/logos/java-icon.png" alt="" class="mangoosta-image"><p>Usamos Java para desarrollo de aplicaciones nativas que requieran altos volúmenes de datos</p></div></div>
+					<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card mangoosta-media"><img src="assets/img/logos/2000px-php-logo-svg_.jpg" alt="" class="mangoosta-image"><p>PHP es un lenguaje de servidor ampliamente utilizado en aplicaciones web</p></div></div>
+					<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card mangoosta-media"><img src="assets/img/logos/Python-logo.png" alt="" class="mangoosta-image"><p>Python es un lenguaje muy útil en el procesamiento de data y el análisis de datos</p></div></div>
+					<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card mangoosta-media"><img src="assets/img/logos/540px-postgresql_logo-3colors-svg_.png" alt="" class="mangoosta-image"><p>PostgreSQL es la base de datos Open-Source más confiable y robusta que existe en el mercado</p></div></div>
 			</div>
-			<div class="mangoosta-column-4 mangoosta-responsive-column">
+			<div class="mangoosta-responsive-column">
 				<div class="mangoosta-smooth-anim">
 					<h2>Dev-ops</h2>
-					<div class="hint--top hint--medium" aria-label="Docker es muy confiable en aquellos entornos donde se requiera un despliegue rápido de aplicaciones"><img src="assets/img/logos/docker_logo.svg" alt="" class="mangoosta-image"></div>
-					<div class="hint--top hint--medium" aria-label="Nuestra herramienta de control de versiones favorita. Versátil para gestión de proyectos y entrega contínua"><img src="assets/img/logos/gitlab.svg" alt="" class="mangoosta-image"></div>
-					<div class="hint--top hint--medium" aria-label="Jenkins es ampliamente utilizado en integración continua por su capacidad de interoperación con otras herramientas como Gitlab"><img src="assets/img/logos/jenkins-logo.png" alt="" class="mangoosta-image"></div>
-					<div class="hint--top hint--medium" aria-label="Sonarqube es una excelente herramienta para control de calidad de código fuente, entre otras alternativas"><img src="assets/img/logos/global.logo.sonarqube.gif" alt="" class="mangoosta-image"></div>
-					<div class="hint--top hint--medium" aria-label="Mangoosta es una empresa orientada a los datos. Nada mejor para describirlos y clasificarlos que Swagger.io"><img src="assets/img/logos/swagger-logo.png" alt="" class="mangoosta-image"></div>
-					<div class="hint--top hint--medium" aria-label="Apache Spark es actualmente la plataforma de Big Data más utilizada en el mundo. ¡Y también nosotros!"><img src="assets/img/logos/Spark_logo.png" alt="" class="mangoosta-image"></div>
+					<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card mangoosta-media"><img src="assets/img/logos/docker_logo.svg" alt="" class="mangoosta-image"><p>Docker es muy confiable en aquellos entornos donde se requiera un despliegue rápido de aplicaciones</p></div></div>
+					<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card mangoosta-media"><img src="assets/img/logos/gitlab.svg" alt="" class="mangoosta-image"><p>Nuestra herramienta de control de versiones favorita. Versátil para gestión de proyectos y entrega contínua</p></div></div>
+					<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card mangoosta-media"><img src="assets/img/logos/jenkins-logo.png" alt="" class="mangoosta-image"><p>Jenkins es ampliamente utilizado en integración continua por su capacidad de interoperación con otras herramientas como Gitlab</p></div></div>
+					<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card mangoosta-media"><img src="assets/img/logos/global.logo.sonarqube.gif" alt="" class="mangoosta-image"><p>Sonarqube es una excelente herramienta para control de calidad de código fuente, entre otras alternativas</p></div></div>
+					<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card mangoosta-media"><img src="assets/img/logos/swagger-logo.png" alt="" class="mangoosta-image"><p>Mangoosta es una empresa orientada a los datos. Nada mejor para describirlos y clasificarlos que Swagger.io</p></div></div>
+					<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card mangoosta-media"><img src="assets/img/logos/Spark_logo.png" alt="" class="mangoosta-image"><p>Apache Spark es actualmente la plataforma de Big Data más utilizada en el mundo. ¡Y también nosotros!</p></div></div>
 				</div>
 			</div>
-			<div class="mangoosta-column-4 mangoosta-responsive-column">
+			<div class="mangoosta-responsive-column">
 				<div class="mangoosta-smooth-anim">
 					<h2>Front-end</h2>
-					<div class="hint--top hint--medium" aria-label="Angular.js se ha convertido en el Framework de referencia para desarrollo de aplicaciones orientadas a datos."><img src="assets/img/logos/angularjs_by_abhishekghosh-d6w57fs.png" alt="" class="mangoosta-image"></div>
-					<div class="hint--top hint--medium" aria-label="Porque para nosotros, la diferenciación es tan importante como los datos, llevamos un nivel de personalización importante usando HTML5 y CSS3. ¡Como está página web!"><img src="assets/img/logos/html5-css3.png" alt="" class="mangoosta-image"></div>
-					<div class="hint--top hint--medium" aria-label="Ionic Framework es ampliamente usado en la industria de desarrollo de software para aplicaciones híbridas y tiempo real."><img src="assets/img/logos/ionic_logo.png" alt="" class="mangoosta-image"></div>
-					<div class="hint--top hint--medium" aria-label="Node.js es nuestra base siempre confiable sobre la cual desarrollamos nuestras interfaces de aplicaciones"><img src="assets/img/logos/nodejs-logo-vector-download-400x400.jpg" alt="" class="mangoosta-image"></div>
-					<div class="hint--top hint--medium" aria-label="¿Requiere de un nivel de personalización muy específico para su aplicación? Sass nos ayuda mucho con eso"><img src="assets/img/logos/sass-logo.png" alt="" class="mangoosta-image"></div>
-					<div class="hint--top hint--medium" aria-label="Los sistemas en tiempo real dirigidos por datos han sido masivamente utilizados en la actualidad. Socket.io es una librería confiable cuando se trata de esos sistemas"><img src="assets/img/logos/socket-io-logo.svg" alt="" class="mangoosta-image"></div>
+					<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card mangoosta-media"><img src="assets/img/logos/angularjs_by_abhishekghosh-d6w57fs.png" alt="" class="mangoosta-image"><p>Angular.js se ha convertido en el Framework de referencia para desarrollo de aplicaciones orientadas a datos</p></div></div>
+					<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card mangoosta-media"><img src="assets/img/logos/html5-css3.png" alt="" class="mangoosta-image"><p>Podemos desarrollar aplicaciones con un nivel de diferenciación importante usando HTML5 y CSS3. ¡Como está página web!</p></div></div>
+					<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card mangoosta-media"><img src="assets/img/logos/ionic-logo.png" alt="" class="mangoosta-image"><p>Ionic Framework es ampliamente usado en la industria de desarrollo de software para aplicaciones híbridas y tiempo real</p></div></div>
+					<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card mangoosta-media"><img src="assets/img/logos/nodejs-logo-vector-download-400x400.jpg" alt="" class="mangoosta-image"><p>Node.js es nuestra base siempre confiable sobre la cual desarrollamos nuestras interfaces de aplicaciones</p></div></div>
+					<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card mangoosta-media"><img src="assets/img/logos/sass-logo.png" alt="" class="mangoosta-image"><p>¿Requiere de un nivel de personalización muy específico para su aplicación? Sass nos ayuda mucho con eso</p></div></div>
+					<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card mangoosta-media"><img src="assets/img/logos/socket-io-logo.svg" alt="" class="mangoosta-image"><p>Socket.io es una librería muy confiable y ampliamente utilizada cuando se trata de desarrollar aplicaciones y sistemas en tiempo real</p></div></div>
 				</div>
 			</div>
 		</div>
@@ -112,7 +109,8 @@
 			<h2>Estamos trabajando duro...</h2>
 		</div>
 	</section>
-	<script src="assets/js/snap.js"></script>
+	<script src="assets/js/navigo.min.js"></script>
+	<script src="assets/js/localStore.js"></script>
 	<script src="assets/js/minified.js"></script>
 	<script src="assets/js/mangoosta.app.js"></script>
 	<script src="assets/js/particles.min.js"></script>

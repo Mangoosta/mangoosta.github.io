@@ -26,7 +26,8 @@ function toggleShowMenu(show) {
 }
 
 function makeGithubRequest() {
-	$.request('GET', "https://api.github.com/users/Mangoosta/repos").then(function(text) {
+	if (!localStore.get("mangoosta-repos")) {
+		$.request('GET', "https://api.github.com/users/Mangoosta/repos").then(function(text) {
 			var repos = $.parseJSON(text);
 			var repoList = repos.map(function (repo) {
 				return {
@@ -36,9 +37,14 @@ function makeGithubRequest() {
 					lenguaje: repo.language
 				};
 			});
-			$("#repos").ht(tplRepo, repoList);
-		}
-	)
+			localStore.set("mangoosta-repos", repoList);
+			}
+		).error(function (err) {
+			console.error(err);
+		})
+	}
+	var repoList = localStore.get("mangoosta-repos");
+	$("#repos").ht(tplRepo, repoList);
 }
 
 function getPage(idPage) {
