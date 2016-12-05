@@ -82,7 +82,7 @@ function makeGithubRequest() {
 
 $(function () {
 
-	var router = new Navigo("/");
+	var router = new Navigo("/", true);
 
 	router.on(hashRoute()).resolve();
 
