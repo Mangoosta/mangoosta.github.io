@@ -207,6 +207,9 @@ label {
     width: inherit; }
   .mangoosta-logo {
     display: none; } }
+@media only screen and (max-width: 480px) {
+  .mangoosta-hide-on-mobile {
+    display: none; } }
 /**********************************************************************
  * Elements.scss - Define classes for most HTML general elements
  * Jhony Grillet @ Mangoosta

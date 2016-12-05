@@ -2,13 +2,46 @@ var $ = require('minified').$,
 		$$ = require('minified').$$,
 		HTML = require('minified').HTML,
 		menu = $(".mangoosta-item").sub(1),
-		actualPage = "#mangoosta-content-inicio",
-		tplRepo = '{{each}}<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card"><div class="mangoosta-grid"><div class="mangoosta-column-4 mangoosta-centered-text"><img src="assets/img/logos/GitHub-Mark.png" height="108" width="108" alt=""></div><a href="{{this.url}}" target="_blank"><h3>{{this.nombre}}</h3></a><p>Hecho en: {{this.lenguaje}}</p><p>{{this.descripcion}}</p></div></div></div>{{/each}}';
+		tglMenu = menu.toggle({"$$show": 0}, {"$$show": 1}),
+		tplRepo = '{{each}}<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card"><div class="mangoosta-grid"><div class="mangoosta-column-4 mangoosta-centered-text"><img src="assets/img/logos/GitHub-Mark.png" height="108" width="108" alt="" class="mangoosta-hide-on-mobile"></div><a href="{{this.url}}" target="_blank"><h3>{{this.nombre}}</h3></a><p>Hecho en: {{this.lenguaje}}</p><p>{{this.descripcion}}</p></div></div></div>{{/each}}';
 
+function setPage(idPage) {
+	$("section").hide();
+	$(idPage).show();
+}
 
 function showMenu() {
 	var viewport = $(window).get("innerWidth");
 	toggleShowMenu((viewport <= 960));
+}
+
+function hashRoute() {
+	return {
+		"/": function () {
+			setPage("#inicio");
+		}
+		,"/inicio": function () {
+			setPage("#inicio");
+		}
+		,"/empresa": function () {
+			setPage("#empresa");
+		}
+		,"/tecnologias": function () {
+			setPage("#tecnologias");
+		}
+		,"/productos": function () {
+			setPage("#productos");
+		}
+		,"/contacto": function () {
+			setPage("#contacto");
+		}
+		,"/idioma": function () {
+			setPage("#idioma");
+		}
+		,"/building": function () {
+			setPage("#building");
+		}
+	}
 }
 
 function toggleShowMenu(show) {
@@ -47,39 +80,18 @@ function makeGithubRequest() {
 	$("#repos").ht(tplRepo, repoList);
 }
 
-function getPage(idPage) {
-	$("section").hide();
-	$(idPage).show();
-}
-
-function setActualPage(idPage) {
-	actualPage = idPage;
-}
-
-function isOtherPage(idPage) {
-	return idPage !== actualPage;
-}
-
 $(function () {
+
+	var router = new Navigo("/");
+
+	router.on(hashRoute()).resolve();
 
 	showMenu();
 
 	makeGithubRequest();
 
-	getPage(actualPage);
-
 	$(window).on("resize", showMenu);
 
-	$("#menu-active").onClick(function () {
-		console.info("hizo click!");
-	});
-
-	$(".mangoosta-item a").onClick(function (event) {
-		var href = event.target.href.split("#")[1];
-		if (isOtherPage("#"+href)) {
-			getPage("#"+href);
-			setActualPage("#"+href);
-		}
-	});
+	$("#menu-active").onClick(tglMenu);
 
 });
