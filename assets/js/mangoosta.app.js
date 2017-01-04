@@ -1,9 +1,10 @@
 var $ = require('minified').$,
 		$$ = require('minified').$$,
+		_ = require('minified')._,
 		HTML = require('minified').HTML,
 		menu = $(".mangoosta-item").sub(1),
 		tglMenu = menu.toggle({"$$show": 0}, {"$$show": 1}),
-		tplRepo = '{{each}}<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card"><div class="mangoosta-grid"><div class="mangoosta-column-4 mangoosta-centered-text"><img src="assets/img/logos/GitHub-Mark.png" height="108" width="108" alt="" class="mangoosta-hide-on-mobile"></div><a href="{{this.url}}" target="_blank"><h3>{{this.nombre}}</h3></a><p>Hecho en: {{this.lenguaje}}</p><p>{{this.descripcion}}</p></div></div></div>{{/each}}';
+		tplRepo = '{{each}}<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card mangoosta-smooth-anim"><div class="mangoosta-grid"><div class="mangoosta-column-4 mangoosta-centered-text"><img src="assets/img/logos/GitHub-Mark.png" height="108" width="108" alt="" class="mangoosta-hide-on-mobile"></div><a href="{{this.url}}" target="_blank"><h3>{{this.nombre}}</h3></a><p>Hecho en: {{this.lenguaje}}</p><p>{{this.descripcion}}</p></div></div></div>{{/each}}';
 
 function setPage(idPage) {
 	$("section").hide();
@@ -75,9 +76,11 @@ function makeGithubRequest() {
 		).error(function (err) {
 			console.error(err);
 		})
+	} else {
+		var repoList = localStore.get("mangoosta-repos");
+		$("#repos").ht(tplRepo, repoList);
 	}
-	var repoList = localStore.get("mangoosta-repos");
-	$("#repos").ht(tplRepo, repoList);
+	
 }
 
 $(function () {
@@ -93,5 +96,11 @@ $(function () {
 	$(window).on("resize", showMenu);
 
 	$("#menu-active").onClick(tglMenu);
+
+	$("#send-commentary").onClick(function (event) {
+		event.preventDefault();
+		var form_data = $("input, textarea").values();
+		
+	});
 
 });

@@ -101,7 +101,7 @@ input[type="submit"].mangoosta-btn {
   width: auto; }
 
 .mangoosta-btn:hover {
-  box-shadow: 1px 8px 16px #444; }
+  box-shadow: 1px 8px 16px #FFFAF0; }
 
 input, textarea, select {
   font-family: 'Open Sans', Sans;
@@ -288,11 +288,11 @@ a, a:link, a:visited {
 .mangoosta-padded-text {
   padding: 0 32px; }
 .mangoosta-card {
-  box-shadow: 1px 2px 4px #444;
+  box-shadow: 1px 2px 4px #FFFAF0;
   padding: 8px;
   margin: 8px 8px; }
 .mangoosta-card:hover {
-  box-shadow: 1px 8px 16px #444; }
+  box-shadow: 1px 8px 16px #FFFAF0; }
 .mangoosta-centered-text {
   text-align: center; }
 .mangoosta-justify-text {
