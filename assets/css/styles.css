@@ -15,6 +15,24 @@
 }
 
 .mangoosta-card {
-  box-shadow: 1px 2px 4px #FFFAF0 !important;
   height: 160px;
+}
+
+.mangoosta-card-bigger {
+  height: 350px;
+}
+
+a.social-button {
+	background-color: #0074D9;
+	padding: 16px 8px;
+	color: #FFFAF0 !important;
+}
+
+input, textarea {
+	border-bottom: 2px solid #FFFAF0;
+	margin: 16px 0
+}
+
+input:focus, textarea:focus {
+	border-bottom: 2px solid #1E7A05;	
 }
