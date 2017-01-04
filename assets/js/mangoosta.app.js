@@ -100,7 +100,8 @@ $(function () {
 	$("#send-commentary").onClick(function (event) {
 		event.preventDefault();
 		var form_data = $("input, textarea").values();
-		
+		swal("Gracias por contactarnos", "Visítanos pronto", "success");
+		$("input, textarea").set("value", "");
 	});
 
 });
