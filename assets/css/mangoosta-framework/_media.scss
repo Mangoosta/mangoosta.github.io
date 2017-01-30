@@ -53,3 +53,11 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 480px) {
+	.mangoosta {
+		&-hide-on-mobile {
+			display: none;
+		}
+	}
+}

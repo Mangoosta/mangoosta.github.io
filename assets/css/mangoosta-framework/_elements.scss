@@ -26,12 +26,16 @@ a:hover, a:focus { @extend .mangoosta-secondary-text; }
 	&-image {
 		width: 128px;
 		height: 128px;
-		margin: 16px;
+		margin: 12px;
 	}
 	&-logo {
 		@extend .mangoosta-coloured-text;
 		padding: 8px;
 		height: 48px;
+	}
+	&-media {
+		display: flex;
+		align-items: flex-start;
 	}
 	&-items {
 		list-style-type: none;

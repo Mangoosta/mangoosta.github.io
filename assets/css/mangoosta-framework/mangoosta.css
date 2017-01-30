@@ -101,7 +101,7 @@ input[type="submit"].mangoosta-btn {
   width: auto; }
 
 .mangoosta-btn:hover {
-  box-shadow: 1px 8px 16px #444; }
+  box-shadow: 1px 8px 16px #FFFAF0; }
 
 input, textarea, select {
   font-family: 'Open Sans', Sans;
@@ -207,6 +207,9 @@ label {
     width: inherit; }
   .mangoosta-logo {
     display: none; } }
+@media only screen and (max-width: 480px) {
+  .mangoosta-hide-on-mobile {
+    display: none; } }
 /**********************************************************************
  * Elements.scss - Define classes for most HTML general elements
  * Jhony Grillet @ Mangoosta
@@ -238,10 +241,13 @@ a, a:link, a:visited {
 .mangoosta-image {
   width: 128px;
   height: 128px;
-  margin: 16px; }
+  margin: 12px; }
 .mangoosta-logo {
   padding: 8px;
   height: 48px; }
+.mangoosta-media {
+  display: flex;
+  align-items: flex-start; }
 .mangoosta-items {
   list-style-type: none;
   -webkit-margin-block-start: 0;
@@ -282,11 +288,11 @@ a, a:link, a:visited {
 .mangoosta-padded-text {
   padding: 0 32px; }
 .mangoosta-card {
-  box-shadow: 1px 2px 4px #444;
+  box-shadow: 1px 2px 4px #FFFAF0;
   padding: 8px;
   margin: 8px 8px; }
 .mangoosta-card:hover {
-  box-shadow: 1px 8px 16px #444; }
+  box-shadow: 1px 8px 16px #FFFAF0; }
 .mangoosta-centered-text {
   text-align: center; }
 .mangoosta-justify-text {

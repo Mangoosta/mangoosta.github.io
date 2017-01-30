@@ -1,14 +1,55 @@
 var $ = require('minified').$,
 		$$ = require('minified').$$,
+		_ = require('minified')._,
 		HTML = require('minified').HTML,
 		menu = $(".mangoosta-item").sub(1),
-		actualPage = "#mangoosta-content-inicio",
-		tplRepo = '{{each}}<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card"><div class="mangoosta-grid"><div class="mangoosta-column-4 mangoosta-centered-text"><img src="assets/img/logos/GitHub-Mark.png" height="108" width="108" alt=""></div><a href="{{this.url}}" target="_blank"><h3>{{this.nombre}}</h3></a><p>Hecho en: {{this.lenguaje}}</p><p>{{this.descripcion}}</p></div></div></div>{{/each}}';
+		tglMenu = menu.toggle({"$$show": 0}, {"$$show": 1}, 200),
+		tplRepo = '{{each}}<div class="mangoosta-column-6 mangoosta-responsive-column"><div class="mangoosta-card mangoosta-smooth-anim"><div class="mangoosta-grid"><div class="mangoosta-column-4 mangoosta-centered-text"><img src="assets/img/logos/GitHub-Mark.png" height="108" width="108" alt="" class="mangoosta-hide-on-mobile"></div><a href="{{this.url}}" target="_blank"><h3>{{this.nombre}}</h3></a><p>Hecho en: {{this.lenguaje}}</p><p>{{this.descripcion}}</p></div></div></div>{{/each}}';
+
+var auth = {
+		key: '3da85a23027c9552b43d2c6466be9673',
+		secret: '8c354a2b143f598a3b8c3ffbf5f5b84ecf86d163d2923125'
+	},
+	baseUrl = 'https://df056d30-d245-11e6-ae5d-89b2a570b795.app.jexia.com';
 
 
-function showMenu() {
+function setPage (idPage) {
+	$("section").hide();
+	$(idPage).show();
+}
+
+function showMenu () {
 	var viewport = $(window).get("innerWidth");
-	toggleShowMenu((viewport <= 960));
+	toggleShowMenu(viewport <= 960);
+}
+
+function hashRoute() {
+	return {
+		"/": function () {
+			setPage("#inicio");
+		}
+		,"/inicio": function () {
+			setPage("#inicio");
+		}
+		,"/empresa": function () {
+			setPage("#empresa");
+		}
+		,"/tecnologias": function () {
+			setPage("#tecnologias");
+		}
+		,"/productos": function () {
+			setPage("#productos");
+		}
+		,"/contacto": function () {
+			setPage("#contacto");
+		}
+		,"/idioma": function () {
+			setPage("#idioma");
+		}
+		,"/building": function () {
+			setPage("#building");
+		}
+	}
 }
 
 function toggleShowMenu(show) {
@@ -26,7 +67,8 @@ function toggleShowMenu(show) {
 }
 
 function makeGithubRequest() {
-	$.request('GET', "https://api.github.com/users/Mangoosta/repos").then(function(text) {
+	if (!localStore.get("mangoosta-repos")) {
+		$.request('GET', "https://api.github.com/users/Mangoosta/repos").then(function(text) {
 			var repos = $.parseJSON(text);
 			var repoList = repos.map(function (repo) {
 				return {
@@ -36,44 +78,49 @@ function makeGithubRequest() {
 					lenguaje: repo.language
 				};
 			});
-			$("#repos").ht(tplRepo, repoList);
-		}
-	)
+			localStore.set("mangoosta-repos", repoList);
+			}
+		).error(function (err) {
+			console.error(err);
+		});
+	} else {
+		var repoList = localStore.get("mangoosta-repos");
+		$("#repos").ht(tplRepo, repoList);
+	}
 }
 
-function getPage(idPage) {
-	$("section").hide();
-	$(idPage).show();
+function makeContactRequest (information) {
+	$.request('POST', baseUrl, auth).then(function(text) {
+		var data = $.parseJSON(text),
+		settings = { headers: { 'Authorization': 'Bearer ' + data.token, 'Access-Control-Allow-Origin': '*' } };
+		return $.request('POST', baseUrl + '/comentarios', information, settings);
+	}).then(function () {
+		swal("Gracias por contactarnos", "Visítanos pronto", "success");
+	}).error(function () {
+		swal("Oh, Oh!", "Debiste haber escrito algo mal... :/", "error");
+	});
 }
 
-function setActualPage(idPage) {
-	actualPage = idPage;
-}
-
-function isOtherPage(idPage) {
-	return idPage !== actualPage;
-}
 
 $(function () {
 
-	showMenu();
+	var router = new Navigo("/", true);
+
+	router.on(hashRoute()).resolve();
 
 	makeGithubRequest();
 
-	getPage(actualPage);
+	showMenu();
 
 	$(window).on("resize", showMenu);
 
-	$("#menu-active").onClick(function () {
-		console.info("hizo click!");
-	});
+	$("#menu-active").onClick(tglMenu);
 
-	$(".mangoosta-item a").onClick(function (event) {
-		var href = event.target.href.split("#")[1];
-		if (isOtherPage("#"+href)) {
-			getPage("#"+href);
-			setActualPage("#"+href);
-		}
+	$("#send-commentary").onClick(function (event) {
+		event.preventDefault();
+		var form_data = $("input, textarea").values();
+		makeContactRequest(form_data);
+		$("input, textarea").set("value", "");
 	});
-
 });
+
