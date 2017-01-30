@@ -93,14 +93,14 @@ function makeContactRequest (information) {
 	$.request('POST', baseUrl, auth).then(function(text) {
 		var data = $.parseJSON(text),
 		settings = { headers: { 'Authorization': 'Bearer ' + data.token, 'Access-Control-Allow-Origin': '*' } };
-			return $.request('POST', baseUrl + '/comentarios', information, settings);
-		}).then(function () {
-			swal("Gracias por contactarnos", "Visítanos pronto", "success");
-		}).error(function () {
-			swal("Oh, Oh!", "Debiste haber escrito algo mal... :/", "error");
-		});
-	}
+		return $.request('POST', baseUrl + '/comentarios', information, settings);
+	}).then(function () {
+		swal("Gracias por contactarnos", "Visítanos pronto", "success");
+	}).error(function () {
+		swal("Oh, Oh!", "Debiste haber escrito algo mal... :/", "error");
+	});
 }
+
 
 $(function () {
 
