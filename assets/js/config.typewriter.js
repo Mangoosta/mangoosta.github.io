@@ -1,1 +1,1 @@
-typewriter.Typewriter.cycle("typewriter", [" personas.", " datos.", " grandes ideas.", " tecnologías.", " sociedades."]);
+typewriter.Typewriter.cycle("typewriter", [" people.", " data.", " great ideas.", " technologies.", " societies.", " the world."]);
